@@ -206,7 +206,7 @@ class VMWareInventory(object):
             'username': '',
             'password': '',
             'validate_certs': True,
-            'ini_path': os.path.join(os.path.dirname(__file__), '%s.ini' % scriptbasename),
+            'ini_path': '/etc/ansible/vmware_inventory.ini', #Set ini path for Ansible Tower
             'cache_name': 'ansible-vmware',
             'cache_path': '~/.ansible/tmp',
             'cache_max_age': 3600,
